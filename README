@@ -1,0 +1,7 @@
+README for the Target Configs
+
+THese took forever to friggin figure out because of the JTAG clk freq.
+
+Each Channel (1-4) & the Master DSP has its own config because it's the config for the entire system with that Channel's DSP selected for usage.
+
+Add these target configs to the projects in order to program that certain DSP.
