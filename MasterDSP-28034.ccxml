@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<configurations XML_version="1.2" id="configurations_0">
+<configuration XML_version="1.2" id="Signum JTAGjet Emulator_0">
+        <instance XML_version="1.2" desc="Signum JTAGjet Emulator_0" href="connections/Signum_Connection.xml" id="Signum JTAGjet Emulator_0" xml="Signum_Connection.xml" xmlpath="connections"/>
+        <connection XML_version="1.2" id="Signum JTAGjet Emulator_0">
+            <instance XML_version="1.2" href="drivers/Signum_JTAGjet_28x.xml" id="drivers" xml="Signum_JTAGjet_28x.xml" xmlpath="drivers"/>
+            <property Type="choicelist" Value="0" id="Allow Custom JTAG Initialization">
+                <choice Name="No - only use settings specified below" value="no">
+                    <property Type="choicelist" Value="4" id="The JTAG TCLK Frequency">
+                        <choice Name="Custom Frequency (10Hz .. 30MHz)" value="user">
+                            <property Type="stringfield" Value="500 ; same as 500kHz or 0.5MHz" id="JTAG Clock Frequency [kHz/Hz/MHz]"/>
+                        </choice>
+                    </property>
+                </choice>
+            </property>
+            <platform XML_version="1.2" id="platform_0">
+                <instance XML_version="1.2" desc="TMS320F28034_0" href="devices/f28034.xml" id="TMS320F28034_0" xml="f28034.xml" xmlpath="devices"/>
+            <instance XML_version="1.2" desc="TMS320F28027_0" href="devices/f28027.xml" id="TMS320F28027_0" xml="f28027.xml" xmlpath="devices"/>
+                <device HW_revision="1" XML_version="1.2" desc="TMS320F28027_Channel1" description="" id="TMS320F28027_0" partnum="TMS320F28027" simulation="no">
+                    <cpu HW_revision="1.0" XML_version="1.2" desc="C28xxChannel1" description="CPU" deviceSim="false" id="C2800" isa="TMS320C28XX">
+                        <property Type="choicelist" Value="1" id="bypass"/>
+                    <property Type="choicelist" Value="0" id="Slave Processor"/>
+                    </cpu>
+                </device>
+                <instance XML_version="1.2" desc="TMS320F28027_1" href="devices/f28027.xml" id="TMS320F28027_1" xml="f28027.xml" xmlpath="devices"/>
+                <device HW_revision="1" XML_version="1.2" desc="TMS320F28027_Channel2" description="" id="TMS320F28027_1" partnum="TMS320F28027" simulation="no">
+                    <cpu HW_revision="1.0" XML_version="1.2" desc="C28xxChannel2" description="CPU" deviceSim="false" id="C2800" isa="TMS320C28XX">
+                        <property Type="choicelist" Value="1" id="bypass"/>
+                    </cpu>
+                </device>
+                <instance XML_version="1.2" desc="TMS320F28027_2" href="devices/f28027.xml" id="TMS320F28027_2" xml="f28027.xml" xmlpath="devices"/>
+                <device HW_revision="1" XML_version="1.2" desc="TMS320F28027_Channel3" description="" id="TMS320F28027_2" partnum="TMS320F28027" simulation="no">
+                    <cpu HW_revision="1.0" XML_version="1.2" desc="C28xxChannel3" description="CPU" deviceSim="false" id="C2800" isa="TMS320C28XX">
+                        <property Type="choicelist" Value="1" id="bypass"/>
+                    </cpu>
+                </device>
+                <instance XML_version="1.2" desc="TMS320F28027_3" href="devices/f28027.xml" id="TMS320F28027_3" xml="f28027.xml" xmlpath="devices"/>
+                <device HW_revision="1" XML_version="1.2" desc="TMS320F28027_Channel4" description="" id="TMS320F28027_3" partnum="TMS320F28027" simulation="no">
+                    <cpu HW_revision="1.0" XML_version="1.2" desc="C28xxChannel4" description="CPU" deviceSim="false" id="C2800" isa="TMS320C28XX">
+                        <property Type="choicelist" Value="1" id="bypass"/>
+                    </cpu>
+                </device>
+            <device HW_revision="1" XML_version="1.2" desc="TMS320F28034_Master" description="" id="TMS320F28034_0" partnum="TMS320F28034" simulation="no">
+                    <cpu HW_revision="1.0" XML_version="1.2" desc="C28xxMaster" description="CPU" deviceSim="false" id="C2800" isa="TMS320C28XX">
+                        <property Type="choicelist" Value="0" id="bypass"/>
+                    </cpu>
+                </device>
+            </platform>
+        </connection>
+    </configuration>
+</configurations>
